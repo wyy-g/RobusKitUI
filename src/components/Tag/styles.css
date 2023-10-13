@@ -1,0 +1,62 @@
+.vk-tag {
+  --vk-tag-text-color: var(--vk-color-primary);
+  --vk-tag-border-color: var(--vk-color-primary-light-7);
+  --vk-tag-bg-color: var(--vk-color-primary-light-9);
+}
+
+.vk-tag {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 32px;
+  line-height: 30px;
+  padding: 0 10px;
+  font-size: 12px;
+  border: 1px solid var(--vk-tag-border-color);
+  background-color: var(--vk-tag-bg-color);
+  color: var(--vk-tag-text-color);
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-right: 10px;
+}
+.vk-tag:last-child {
+  margin-right: 0;
+}
+
+.vk-tag__icon {
+  margin-left: 5px;
+  margin-top: 3px;
+  cursor: pointer;
+}
+@each $val in (primary, success, warning, danger, info) {
+  .vk-tag--$(val) {
+    --vk-tag-text-color: var(--vk-color-$(val));
+    --vk-tag-border-color: var(--vk-color-$(val)-light-7);
+    --vk-tag-bg-color: var(--vk-color-$(val)-light-9);
+  }
+  .vk-tag--$(val).vk-tag--dark {
+    --vk-tag-text-color: var(--vk-color-white);
+    --vk-tag-border-color: var(--vk-color-$(val));
+    --vk-tag-bg-color: var(--vk-color-$(val));
+  }
+  .vk-tag--$(val).vk-tag--plain {
+    --vk-tag-text-color: var(--vk-color-$(val));
+    --vk-tag-border-color: var(--vk-color-$(val));
+    --vk-tag-bg-color: var(--vk-color-white);
+  }
+}
+
+.vk-tag--medium {
+  height: 28px;
+  line-height: 26px;
+}
+
+.vk-tag--small {
+  height: 24px;
+  line-height: 22px;
+}
+
+.vk-tag--mini {
+  height: 20px;
+  line-height: 18px;
+}

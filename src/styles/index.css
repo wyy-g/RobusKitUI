@@ -1,0 +1,17 @@
+@import "./vars.css";
+@import "./reset.css";
+@import "../components/Button/styles.css";
+@import "../components/Collapse/styles.css";
+@import "../components/Icon/styles.css";
+@import "../components/Alert/styles.css";
+@import "../components/Tag/styles.css";
+@import "../components/Tooltip/styles.css";
+@import "../components/Popconfirm/styles.css";
+@import "../components/BackTop/styles.css";
+@import "../components/Dropdown/styles.css";
+@import "../components/Message/styles.css";
+@import "../components/Notification/styles.css";
+@import "../components/Input/styles.css";
+@import "../components/Switch/styles.css";
+@import "../components/Select/styles.css";
+@import "../components/Form/styles.css";

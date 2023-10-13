@@ -1,0 +1,23 @@
+.vk-backtop {
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.12);
+  text-align: center;
+  line-height: 40px;
+  border-radius: 8px;
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  background-color: #f2f5f6;
+  cursor: pointer;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity var(--vk-transition-duration);
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
