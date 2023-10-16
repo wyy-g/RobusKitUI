@@ -10,6 +10,7 @@ import {
 export default defineConfig({
   title: "RobustKit UI",
   description: "一个 Vue 3 组件库",
+  base: "/RobusKitUI/",
   vite: {
     plugins: [vueJsx()],
     resolve: {
